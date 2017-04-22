@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ListPage} from '../list/list'
+import { AutoCompleteModule } from 'ionic2-auto-complete';
+import { CompleteTestService } from '../../providers/complete-test-service';
 
 @Component({
   selector: 'page-search',
@@ -8,7 +10,7 @@ import {ListPage} from '../list/list'
 })
 export class SearchPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public completeTestService: CompleteTestService) {
   }
 
   ionViewDidLoad() {
@@ -20,5 +22,13 @@ export class SearchPage {
     this.navCtrl.push(ListPage);
 
   }
+
+  getData(){
+
+  }
+
+  options: any = {placeholder: 'lorem' }
+
+
 
 }
