@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Aladin|Oswald:300);
+#map-box{
+	border: 1px solid black;
+}
+
+#map-canvas{
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#topbar{
+	text-align:center;
+}
+#topbar p{
+	font-family: "Lato" !important;
+	font-size: 24px;
+}
+img, audio, video {
+	width: 100%;
+}
+#topbar img{
+	width:100%
+}
+
+#topbar:hover{
+	cursor: pointer;
+}
+.center{
+	text-align: center;
+}
+
+.data-list li a{
+	font-family: 'Oswald';
+	font-size: 18px;
+}
+.data-list li a span i {font-size: 15px;}
+.info{
+	font-family: 'PT Sans Narrow'; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+}
+
+body::-webkit-scrollbar {
+	display: none; 
+}
+
+.data-container{border: 1px solid black; margin: 10px;}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper { text-shadow:none; }
+form div.ui-input-search.ui-body-inherit { 
+  margin-left:0.7em; 
+  margin-right:0.7em; 
+  background-color:white;
+  border-color:white;
+  -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  border-radius: 0.2em;
+}
+
+#searchby-button.ui-btn { 
+box-shadow:none;margin-left:0.7em; margin-right:0.7em; }
+.ui-shadow { box-shadow:none; }
+.ui-select .ui-btn select { line-height:1.5em; border-color:white; }
+.ui-btn.ui-btn-icon-right.ui-icon-carat-r { margin-left:0.6em; 
+  margin-right:0.6em; 
+}
+.ui-first-child .ui-btn.ui-btn-icon-right.ui-icon-carat-r {
+  border-radius: 0.2em 0.2em 0 0;
+}
+.ui-last-child .ui-btn.ui-btn-icon-right.ui-icon-carat-r {
+  border-radius: 0 0 0.2em 0.2em;
+}
+.ui-btn.ui-btn-icon-right.ui-icon-carat-r { padding:8px; }
+.ui-page-theme-a .ui-bar-inherit{
+border-color: none; border-width:0;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited { 
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+    background-color: #ffffff;
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  text-shadow: none;
+}
+
+
+/*Beginning: This code is for different skin color. Copy different skin from skin-css file
+
+
+div.ui-content, .ui-page-theme-a .ui-bar-inherit, #searchby-button.ui-btn {
+background-color: #fb8630; 
+}
+#searchby-button.ui-btn { 
+background-color:#c15405;
+border-color:#c15405; 
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited { 
+background-color: #c15405;
+border-color: #c15405;
+}
+html .ui-btn.ui-btn-icon-left:hover, .ui-btn.ui-btn-icon-right.ui-icon-carat-r:hover { 
+background-color:#da650f; 
+border-color: #da650f;}
+
+
+/*Ending.*/
+
+
+          
+      
+
+  
+  
+  
+
+  
+
+  

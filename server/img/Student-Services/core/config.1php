@@ -1,0 +1,19 @@
+<?php
+//server config
+$server = "localhost";
+$username = "root";
+$password = "lab99b";
+$database = "web_apps";
+$table = "httg";
+
+//topbar config
+//$topbar_image= "img/cdcs-logo.png";
+$topbar_text = "HỘI THÁNH TRUYỀN GIÁO TRÊN ĐƯỜNG DÂY";
+$home_content_image ="img/cdcs-home.png";
+//$home_content_text = "<h1>Welcome to Southeastern!</h1>";
+
+
+//footer text config
+$footer_text = "&copy CDCS 2016";
+
+?>
