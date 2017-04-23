@@ -40,7 +40,7 @@ export class SearchPage {
   }
 
   gotoListPage(item: any){
-    this.navCtrl.push(ListPage);
+    this.navCtrl.push(ListPage, item);
 
   }
 
