@@ -17,18 +17,16 @@ export class SearchPage {
     console.log('ionViewDidLoad Search');
   }
 
-  gotoListPage(){
+  gotoListPage(item: any){
     console.log('navigating to list page');
     this.navCtrl.push(ListPage);
 
   }
 
-  getData(){
-
+  searchItemSelected(item){
+    console.log('item selected', item);
+    this.gotoListPage(item);
   }
-
-  options: any = {placeholder: 'lorem' }
-
 
 
 }

@@ -17,7 +17,7 @@
   <button ion-button full (click)="gotoListPage()">Full Button</button>
 
 
-  <ion-auto-complete [dataProvider]="completeTestService"></ion-auto-complete>
+  <ion-auto-complete [dataProvider]="completeTestService" (itemSelected)="searchItemSelected($event)"></ion-auto-complete>
 
 
 
