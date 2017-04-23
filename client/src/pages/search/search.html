@@ -15,6 +15,10 @@
 
 <ion-content padding>
   <button ion-button full (click)="gotoListPage()">Full Button</button>
+  <select [(ngModel)]="selectedValue" (ngModelChange)="searchModeChanged($event)">
+    <option *ngFor="let c of selectData" [ngValue]="c">{{c.value}}</option>
+  </select>
+
 
 
   <ion-auto-complete [dataProvider]="completeTestService" (itemSelected)="searchItemSelected($event)"></ion-auto-complete>

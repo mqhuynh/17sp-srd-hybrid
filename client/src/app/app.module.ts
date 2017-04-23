@@ -10,6 +10,7 @@ import { SearchPage } from '../pages/search/search';
 import { ListPage } from '../pages/list/list';
 import { AutoCompleteModule } from 'ionic2-auto-complete';
 import { CompleteTestService } from '../providers/complete-test-service';
+import { ApiService } from '../providers/api-service';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { CompleteTestService } from '../providers/complete-test-service';
     StatusBar,
     SplashScreen,
     CompleteTestService,
+    ApiService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
