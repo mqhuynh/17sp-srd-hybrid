@@ -1,6 +1,6 @@
-<?php require_once ('core/connection.php'); ?>
+<?php require_once ('core/connection.php'); 
+header('Access-Control-Allow-Origin: *');  
 
-<?php
 echo json_encode(
     array('data'=> $all_data,
         'types'=> $datatype));
