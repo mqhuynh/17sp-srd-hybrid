@@ -20,6 +20,9 @@ export class SearchPage {
       }
 
       this.dataLoaded();
+
+      //testing purpose only
+      setTimeout(() => {this.searchItemSelected(this.completeTestService.getResults('a')[0]);}, 100);
     };
     loader();
   }
@@ -36,6 +39,7 @@ export class SearchPage {
 
     if(this.selectData && this.selectData.length>0){
       this.selectedKey = this.selectData[0];
+      this.searchModeChanged(this.selectedKey);
     }
   }
 

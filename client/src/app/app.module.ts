@@ -11,13 +11,15 @@ import { ListPage } from '../pages/list/list';
 import { AutoCompleteModule } from 'ionic2-auto-complete';
 import { CompleteTestService } from '../providers/complete-test-service';
 import { ApiService } from '../providers/api-service';
+import {HeaderBar} from '../components/header-bar'
 
 
 @NgModule({
   declarations: [
     MyApp,
     SearchPage,
-    ListPage
+    ListPage,
+    HeaderBar
   ],
   imports: [
     HttpModule,

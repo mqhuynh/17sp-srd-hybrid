@@ -14,3 +14,28 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+ion-content{
+  font-size: 150%;
+}
+
+a{
+  color: #009245;
+  font-size:120%;
+}
+a:visited{
+  color: #005e2c;
+}
+
+
+.ruled:not(:empty){
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.ruled:not(:first-child):not(:empty){
+  border-top: solid gray 1px;
+}
+.ruled:not(:last-child):not(:empty){
+  border-bottom: solid gray 1px;
+}

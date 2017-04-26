@@ -5,14 +5,47 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>list</ion-title>
-  </ion-navbar>
+  <header-bar></header-bar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-card>
+    <ion-card-content>
+
+      <div *ngFor="let field of data.fields" class="ruled"><div *ngIf="field.value">
+
+          <ion-card-title *ngIf="field.type.indexOf('name')>=0">
+            {{field.fieldname}}: {{field.value}}
+          </ion-card-title>
+
+          <p *ngIf="field.type.indexOf('url')>=0">
+            <a href="//{{field.value}}" target="_system">{{field.value}}</a>
+          </p>
+
+          <p *ngIf="field.type.indexOf('phone')>=0">
+            <a href="tel:{{field.value}}">{{field.value}}</a>
+          </p>
+
+          <p *ngIf="field.type.indexOf('email')>=0">
+            <a href="mailto:{{field.value}}">{{field.value}}</a>
+          </p>
+
+          <p *ngIf="field.type.indexOf('text')>=0 && field.type.indexOf('name') == -1">
+            {{field.fieldname}}: {{field.value}}
+          </p>
+
+          <p *ngIf="field.type.indexOf('image')>=0">
+            <img [src]="'http://'+field.value"/>
+          </p>
+          <button ion-button full outline *ngIf="field.type.indexOf('map')>=0" (click)="showDirections(field.value)">
+            Directions
+          </button>
+
+        </div></div>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

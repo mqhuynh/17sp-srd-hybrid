@@ -22,16 +22,23 @@ export class ListPage {
     if(data && data.data[$id]){
       this.data = {
         $id,
-        fields: data.data[$id].map((value, index)=> ({
+        fields: data.data[$id].slice(1, data.data[$id].length).map((value, index)=> ({
           value,
           index,
-          fieldname: data.fieldname[index],
-          type: data.types[index]
+          fieldname: data.fieldname[index+1],
+          type: data.types[index+1]
         }))
       };
       console.log('new data is ', this.data);
 
     }
 
+  }
+
+  showDirections(value){
+    const url=`https://maps.google.com/?q=${value}`;
+
+    console.log('launching', url);
+    window.open(url, '_system');
   }
 }
