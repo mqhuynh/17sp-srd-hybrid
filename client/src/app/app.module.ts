@@ -12,6 +12,9 @@ import { AutoCompleteModule } from 'ionic2-auto-complete';
 import { CompleteTestService } from '../providers/complete-test-service';
 import { ApiService } from '../providers/api-service';
 import {HeaderBar} from '../components/header-bar'
+import {FormatHttpLinkPipe} from '../pipes/formatHttpLink'
+import { IonicAudioModule } from 'ionic-audio';
+
 
 
 @NgModule({
@@ -19,13 +22,15 @@ import {HeaderBar} from '../components/header-bar'
     MyApp,
     SearchPage,
     ListPage,
-    HeaderBar
+    HeaderBar,
+    FormatHttpLinkPipe
   ],
   imports: [
     HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AutoCompleteModule
+    AutoCompleteModule,
+    IonicAudioModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

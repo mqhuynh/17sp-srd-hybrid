@@ -22,7 +22,7 @@
           </ion-card-title>
 
           <p *ngIf="field.type.indexOf('url')>=0">
-            <a href="//{{field.value}}" target="_system">{{field.value}}</a>
+            <a href="{{field.value | formatHttpLink}} " target="_system">{{field.value}}</a>
           </p>
 
           <p *ngIf="field.type.indexOf('phone')>=0">
@@ -38,8 +38,42 @@
           </p>
 
           <p *ngIf="field.type.indexOf('image')>=0">
-            <img [src]="'http://'+field.value"/>
+            <img [src]="field.value | formatHttpLink"/>
           </p>
+
+          <p *ngIf="field.type.indexOf('video')>=0">
+
+              <span *ngIf="field.value.indexOf('youtube')>=0">
+
+                <button ion-button full outline (click)="window.open(field.value, '_system')">Video on YouTube</button>
+              </span>
+            <span *ngIf="field.value.indexOf('youtube') == -1">
+              <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+                Sorry, this device can not play videos.
+                <source [src]="field.value | formatHttpLink" type="video/mp4"/>
+              </video>
+            </span>
+          </p>
+
+          <p *ngIf="field.type.indexOf('audio')>=0">
+            <audio-track #audio [track]="{src: field.value, preload: 'metadata'}"
+                         (onFinish)="onTrackFinished($event)">
+              <ion-thumbnail item-left>
+                <audio-track-play dark [audioTrack]="audio">
+                  <ion-spinner></ion-spinner>
+                </audio-track-play>
+              </ion-thumbnail>
+
+              <div item-content style="width:100%">
+
+                <audio-track-progress-bar dark duration progress [audioTrack]="audio"
+                                          [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+              </div>
+
+            </audio-track>
+          </p>
+
+
           <button ion-button full outline *ngIf="field.type.indexOf('map')>=0" (click)="showDirections(field.value)">
             Directions
           </button>
