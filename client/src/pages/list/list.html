@@ -45,7 +45,7 @@
 
               <span *ngIf="field.value.indexOf('youtube')>=0">
 
-                <button ion-button full outline (click)="window.open(field.value, '_system')">Video on YouTube</button>
+                <button ion-button full outline (click)="openYoutube(field.value)">Video on YouTube</button>
               </span>
             <span *ngIf="field.value.indexOf('youtube') == -1">
               <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">

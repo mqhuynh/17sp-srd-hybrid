@@ -3,4 +3,12 @@ page-list {
     font-size: larger !important;
   }
 
+  .videoPlayer{
+    width: 100%;
+  }
+
+  audio-track ion-thumbnail audio-track-play{
+    position: relative;
+  }
+
 }

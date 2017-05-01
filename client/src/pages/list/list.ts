@@ -19,7 +19,8 @@ export class ListPage {
   allTracks: any[];
   selectedTrack = null;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public api: ApiService, private _audioProvider: AudioProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public api: ApiService,
+              private _audioProvider: AudioProvider) {
     const $id = this.navParams.get('$id');
 
     const data = this.api.getData();
@@ -52,9 +53,18 @@ export class ListPage {
     window.open(url, '_system');
   }
 
+  openYoutube(value){
+    console.log('launching ', value);
+    window.open(value, '_system');
+  }
+
   ngAfterContentInit() {
     // get all tracks managed by AudioProvider so we can control playback via the API
     this.allTracks = this._audioProvider.tracks;
+  }
+  ngOnDestroy(){
+    this._audioProvider.stop();
+
   }
 
   playSelectedTrack() {
