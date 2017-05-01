@@ -1,17 +1,54 @@
+@import "../../theme/variables";
+
 page-search {
-  .dropdown{
+  .dropdown {
     min-width: 30%;
     display: inline-block;
     padding: 10px;
+    color: map_get($colors, green);
+    font-weight: normal;
   }
 
-  .search-by-container{
+  .search-by-container {
     margin-bottom: 5%;
+    margin-top: 4em;
   }
 
-  .image{
+  .image {
     width: 100%;
     overflow: hidden;
+  }
+
+  ion-footer {
+    .toolbar-background {
+      background: map_get($colors, green);
+    }
+    .toolbar-title{
+      color: map_get($colors, white);
+    }
+  }
+
+  ion-auto-complete{
+    margin-top: 2em;
+    color: map_get($colors, green);
+
+    ion-searchbar{
+      padding: 1rem !important;
+
+      .searchbar-input{
+        font-size: 3.6rem;
+      }
+
+    }
+  }
+
+  .top{
+    background: map_get($colors, lightgreen);
+    color: map_get($colors, white);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 17px;
+    margin-top:2em;
   }
 
 }

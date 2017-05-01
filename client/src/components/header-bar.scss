@@ -1,0 +1,21 @@
+@import "../theme/variables";
+header-bar{
+
+  ion-title {
+    .toolbar-title {
+      text-align: center;
+      color: map_get($colors, white);
+    }
+  }
+
+
+  .toolbar-background{
+    background: map_get($colors, green);
+  }
+
+  ion-navbar{
+    .back-button, .back-button:hover, .back-button:active{
+      color: map_get($colors, white) !important;
+    }
+  }
+}

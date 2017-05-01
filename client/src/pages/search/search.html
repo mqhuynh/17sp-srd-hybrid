@@ -3,19 +3,24 @@
 </ion-header>
 
 <ion-content padding text-center>
-  <div class="search-by-container">
 
-    <label>
-      Search by:
-      <select [(ngModel)]="selectedKey" (ngModelChange)="searchModeChanged($event)" class="dropdown">
-        <option *ngFor="let c of selectData" [ngValue]="c">{{c.value}}</option>
-      </select>
-    </label>
+  <div class="top">
+    <div class="search-by-container">
+
+      <label>
+        Search by:
+        <select [(ngModel)]="selectedKey" (ngModelChange)="searchModeChanged($event)" class="dropdown">
+          <option *ngFor="let c of selectData" [ngValue]="c">{{c.value}}</option>
+        </select>
+      </label>
+    </div>
+
+    <br/>
+
+    <ion-auto-complete [dataProvider]="completeTestService"
+                       (itemSelected)="searchItemSelected($event)"></ion-auto-complete>
   </div>
 
-  <br />
-
-  <ion-auto-complete [dataProvider]="completeTestService" (itemSelected)="searchItemSelected($event)"></ion-auto-complete>
   <img class="image" src="assets/bgA.png"/>
 
 </ion-content>
