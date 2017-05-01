@@ -8,5 +8,5 @@ echo json_encode(
         'search_keys' => $search_keys,
         'fieldname' => $fieldname,
         'name_keys' => $name_keys
-));
+), JSON_PRETTY_PRINT);
 
