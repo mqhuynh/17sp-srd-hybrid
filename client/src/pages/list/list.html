@@ -56,8 +56,7 @@
           </p>
 
           <p *ngIf="field.type.indexOf('audio')>=0">
-            <audio-track #audio [track]="{src: field.value, preload: 'metadata'}"
-                         (onFinish)="onTrackFinished($event)">
+            <audio-track #audio [track]="{src: field.value, preload: 'metadata'}">
               <ion-thumbnail item-left>
                 <audio-track-play dark [audioTrack]="audio">
                   <ion-spinner></ion-spinner>
