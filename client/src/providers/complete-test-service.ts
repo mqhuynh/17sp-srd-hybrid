@@ -15,7 +15,7 @@ import {ApiService} from './api-service'
 @Injectable()
 export class CompleteTestService implements AutoCompleteService {
   // overridden, useless string
-  labelAttribute: string;
+  labelAttribute: string = "name";
 
   // the column of field in api data
   index = 0;
