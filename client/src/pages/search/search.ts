@@ -61,7 +61,6 @@ export class SearchPage {
   }
 
   searchItemSelected(item) {
-    console.log('item selected', item);
     this.gotoListPage(item);
   }
 

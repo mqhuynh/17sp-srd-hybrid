@@ -34,7 +34,6 @@ export class ListPage {
           type: data.types[index+1]
         }))
       };
-      console.log('new data is ', this.data);
 
     }
 
