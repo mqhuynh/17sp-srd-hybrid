@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 export class ApiService {
 
   // the server address
-  static readonly ADDRESS: string = "http://localhost/api.php";
+  static readonly ADDRESS: string = "http://student-services.srdapp.com/api.php";
 
   //server data is stored in this variable
   static data: any = null;
