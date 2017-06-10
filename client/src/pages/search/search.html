@@ -4,12 +4,12 @@
 
 <ion-content padding text-center>
 
-  <div class="top">
+  <div class="top" [ngStyle]="{'background': COLOR_C.search_page.big_box_background, 'color': COLOR_C.text_light}">
     <div class="search-by-container">
 
       <label>
         Search by:
-        <select [(ngModel)]="selectedKey" (ngModelChange)="searchModeChanged($event)" class="dropdown">
+        <select [(ngModel)]="selectedKey" (ngModelChange)="searchModeChanged($event)" class="dropdown" [ngStyle]="{'color': COLOR_C.page_theme}">
           <option *ngFor="let c of selectData" [ngValue]="c">{{c.value}}</option>
         </select>
       </label>
@@ -21,14 +21,15 @@
                        (itemSelected)="searchItemSelected($event)"></ion-auto-complete>
   </div>
 
-  <img class="image" src="assets/bgA.png"/>
+  <img class="image" [src]="'assets/'+SEARCH_C.background_image" *ngIf="SEARCH_C.background_image" />
 
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
     <ion-title align="center">
-      © CDCS 2016
+      {{ FOOTER_C.text }}
+      <img [src]="'assets/'+FOOTER_C.image" *ngIf="FOOTER_C.image" />
     </ion-title>
   </ion-toolbar>
 </ion-footer>

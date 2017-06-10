@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation} from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -7,9 +7,19 @@ import { SearchPage } from '../pages/search/search';
 import { ListPage} from '../pages/list/list';
 
 import {ApiService} from '../providers/api-service'
+import C from '../config'
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  encapsulation: ViewEncapsulation.None,
+  styles: [`
+a{
+    color: ${C.colors.link_text};
+}
+a:visited{
+    color: ${C.colors.link_text_visited};
+}
+`]
 })
 export class MyApp {
   rootPage:any = SearchPage;

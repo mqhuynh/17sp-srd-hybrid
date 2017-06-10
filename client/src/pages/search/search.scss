@@ -5,7 +5,6 @@ page-search {
     min-width: 30%;
     display: inline-block;
     padding: 10px;
-    color: map_get($colors, green);
     font-weight: normal;
   }
 
@@ -19,18 +18,8 @@ page-search {
     overflow: hidden;
   }
 
-  ion-footer {
-    .toolbar-background {
-      background: map_get($colors, green);
-    }
-    .toolbar-title{
-      color: map_get($colors, white);
-    }
-  }
-
   ion-auto-complete{
     margin-top: 2em;
-    color: map_get($colors, green);
 
     ion-searchbar{
       padding: 1rem !important;
@@ -43,8 +32,6 @@ page-search {
   }
 
   .top{
-    background: map_get($colors, lightgreen);
-    color: map_get($colors, white);
     font-weight: bold;
     padding: 1rem;
     border-radius: 17px;

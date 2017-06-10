@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {ListPage} from '../list/list'
 import {AutoCompleteModule} from 'ionic2-auto-complete';
 import {CompleteTestService} from '../../providers/complete-test-service';
 import {ApiService} from '../../providers/api-service'
 import {LoadingController} from 'ionic-angular';
+import C from '../../config'
 
 /**
  * The page where the user can search for elements.
@@ -14,13 +15,29 @@ import {LoadingController} from 'ionic-angular';
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html',
+  encapsulation: ViewEncapsulation.None,
+  styles: [`
+page-search ion-footer .toolbar-background {
+    background: ${C.colors.page_theme};
+}
+page-search ion-footer .toolbar-title {
+    color: ${C.colors.text_light};
+}
+
+page-search ion-auto-complete {
+    color: ${C.colors.page_theme};
+}
+`]
 })
 export class SearchPage {
+  readonly FOOTER_C = C.footer;
+  readonly SEARCH_C = C.search_page;
+  readonly COLOR_C = C.colors;
+
   selectData = [];
   selectedKey: string = '';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public completeTestService: CompleteTestService, public api: ApiService, public loading: LoadingController) {
-
     //the loading box
     const loaderBox = this.loading.create({
       content: 'Getting latest entries...',
