@@ -1,6 +1,9 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import C from '../config'
 
+/**
+ * The header directive.
+ */
 @Component({
   selector: 'header-bar',
   templateUrl: 'header-bar.html',

@@ -9,6 +9,9 @@ import { ListPage} from '../pages/list/list';
 import {ApiService} from '../providers/api-service'
 import C from '../config'
 
+/**
+ * App level component
+ */
 @Component({
   templateUrl: 'app.html',
   encapsulation: ViewEncapsulation.None,

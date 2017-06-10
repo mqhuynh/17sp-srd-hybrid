@@ -4,7 +4,7 @@ import {ApiService} from '../../providers/api-service'
 import { AudioProvider } from 'ionic-audio';
 
 /**
- * The listPage. Shows the description of an element like it's name, video, etc.
+ * The listPage. Shows the description of an element like its name, email, contact, video, etc.
  */
 @Component({
   selector: 'page-list',

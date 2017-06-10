@@ -10,7 +10,7 @@ import C from '../../config'
 /**
  * The page where the user can search for elements.
  *
- * This page is the landing page. It will pass data to listPage to show a single element.
+ * This page is also the landing page. It will later on pass data to listPage to show a single element.
  */
 @Component({
   selector: 'page-search',

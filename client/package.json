@@ -8,7 +8,8 @@
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "sass": "ionic-app-scripts sass"
   },
   "dependencies": {
     "@angular/common": "4.0.0",
@@ -34,6 +35,8 @@
   "devDependencies": {
     "@ionic/app-scripts": "1.3.0",
     "typescript": "~2.2.1"
+  },
+  "config": {
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
