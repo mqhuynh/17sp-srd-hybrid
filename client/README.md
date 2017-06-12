@@ -1,6 +1,8 @@
 # 17-sp-srd-hybrid
 Client side.
 
+Modify `src/config.ts` for custom configuration.
+
 ## Installation Guide
 * Download and install Node.js.
 * Open a command prompt and `cd` into this directory.
