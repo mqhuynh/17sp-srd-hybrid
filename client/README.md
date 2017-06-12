@@ -19,7 +19,7 @@ Client side.
 * To deploy on the server, type `gulp build` (TO DO).
 
 ## Deployment
-Follow these instructions on your local machine:
+You should have run the project on your local machine at least once. After that, follow these instructions on your local machine:
 
 * `cd client`
 * First thing first. What you need to do is to copy your local `www` directory to the server.
