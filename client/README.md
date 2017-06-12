@@ -10,3 +10,10 @@ Client side.
 * Make sure that everything works fine, type `ionic serve`. After about a minute, a browser tab will pop up.
 * To run on phone, type `ionic run ios` or `ionic run android` depending on your platform.
 * To emulate, type `ionic emulate ios` or `ionic emulate android`.
+
+
+## Running later
+* `cd` into the directory
+* To start the ionic on browser, type `ionic serve`. This will take some time.
+* Open `client/src/config.ts` in any text editor and modify it however you like. You'll see those changes reload automatically in the browser.
+* To deploy on the server, type `gulp build` (TO DO).
