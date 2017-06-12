@@ -13,6 +13,10 @@ Modify `src/config.ts` for custom configuration.
 * To run on phone, type `ionic run ios` or `ionic run android` depending on your platform.
 * To emulate, type `ionic emulate ios` or `ionic emulate android`.
 
+## Pulling updates from GitHub
+* First of all, you need to realize that you'll lose ALL your local changes.
+* Then open terminal and `cd` into project directory.
+* Type `git stash` followed by `git pull origin master`.
 
 ## Running later
 * `cd` into the directory
