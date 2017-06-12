@@ -3,9 +3,16 @@ Client side.
 
 Modify `src/config.ts` for custom configuration.
 
+## For the first time
+You need to get this code from GitHub to your laptop (MUST BE Mac or Linux or \*nix friendly.). Then `cd` into any directory you want into your system (preferably Desktop). Then type:
+
+`git clone https://github.com/mqhuynh/17sp-srd-hybrid.git`
+
+After some time, you'll see that there is a directory named `17sp-srd-hybrid` on your current directory. Now follow the Installation Guide below.
+
 ## Installation Guide
 * Download and install Node.js.
-* Open a command prompt and `cd` into this directory.
+* Open a command prompt and `cd` into `client`.
 * Then type `npm install -g cordova gulp ionic` to install Ionic and Cordova. This will take some time.
 * Type `npm install`
 * To setup for android, follow [these](https://codebabes.com/newb/setup-android-studio-windows) extra steps to download and install Android Studio and add. 
