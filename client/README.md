@@ -17,3 +17,11 @@ Client side.
 * To start the ionic on browser, type `ionic serve`. This will take some time.
 * Open `client/src/config.ts` in any text editor and modify it however you like. You'll see those changes reload automatically in the browser.
 * To deploy on the server, type `gulp build` (TO DO).
+
+## Deployment
+Follow these instructions on your local machine:
+
+* `cd client`
+* First thing first. What you need to do is to copy your local `www` directory to the server.
+* You can use `scp` like this: `scp -r www root@srdapp.com:/var/www/html/student-services/ionic-app`
+* Or if you're on windows, use PuTTY: `pscp -r www root@srdapp.com:/var/www/html/student-services/ionic-app`
